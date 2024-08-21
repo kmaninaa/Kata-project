@@ -7,87 +7,144 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width; initial-scale=1">
     </head>
-    <body>
-        <header class="header header-1120"> 
-            <nav class="header__navigation-menu">
-                <div class="container-flex-768 conainer-flex hide-1120">
-                    <div class="container-flex-768__container">
-                        <div class="header__check-box header__navigation-menu-item"></div>
-                        <div class="header__devider header__devider-left hide-item-phone-768"></div>
-                        <div class="header__navigation-menu__logo logo-container">
-                            <a href="index.html"><img class="img-logo" src="images/Group.svg" alt="Логотип"></a>
-                        </div>
-                    </div>
-                    <div class="container-flex-768__container">
-                        <div class="header__navigation-menu-item header__call hide-item-phone-768"><img src="images/call.svg" alt=""></div>
-                        <div class="header__navigation-menu-item header__chat hide-item-phone-768"><img src="images/chat.svg" alt=""></div>
-                        <div class="header__navigation-menu-item header__profile hide-item-phone-768"><img src="images/profile.svg" alt=""></div>
-                        <div class="header__devider header__devider-right"></div>
-                        <div class="header__navigation-menu-item header__repair"><img class="img-repair" src="images/repair.svg" alt="Оставить заявку"></div>
-                        <div class="header__navigation-menu-item header__checkstatus"><img src="images/checkstatus.svg" alt="Проверить статус работы"></div>
-                    </div>
-                </div>
-                <h1 class="main-page__heading hide-item-phone-1120">Услуги и сервисы</h1>
-                <div class="header__navigarion-container hide-item-phone-1120">
-                    <div class="header__navigation-menu-item header__repair">
-                        <span class="header__navigation-item-text">Оставить заявку</span>
-                        <img class="img-repair" src="images/repair.svg" alt="Оставить заявку">
-                    </div>
-                    <div class="header__navigation-menu-item header__checkstatus">
-                        <span class="header__navigation-item-text">Статус ремонта</span>
-                        <img src="images/checkstatus.svg" alt="Проверить статус работы">
-                    </div>
-                </div>
+<body>
+    <header class="header">
+        <nav class="header__navigation phone--adaptive">
+            <div class="burger-menu-container">
+                <label class="burger-menu-label">
+                    <input type="checkbox" class="header__burger-menu-checkbox header__navigation-item visually-hidden">
+                    <span class="check-box header__navigation-item--rose-circle"></span>
+                </label>
+            </div>
+            <div class="logo-container">
+                <a href="index.html" class="header__logo-link header__navigation-item"><img src="images/Group.svg" class="header__logo-img" alt="Логотип CPS"></a>
+            </div>
+            <div class="devider"></div>
+            <div class="button-repair-container">
+                <button class="header__button-repair header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+            </div>
+            <div class="button-checkstatus-container">
+                <button class="header__button-checkstatus header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+            </div>
         </nav>
-        </header>
-        <main class="main-page">
-             <h1 class="main-page__heading hide-1120">Услуги и сервисы</h1>
-             <div class="menu-container">
-                <ul class="menu">
-                    <li class="menu__item menu__item-selected">Ремонтируемые устройства</li>
-                    <li class="menu__item">Дополнительные услуги</li>
-                    <li class="menu__item">Цены на услуги</li>
-                    <li class="menu__item">Адреса сервисных центров</li>
-                    <li class="menu__item">Специальные цены</li>
-                    <li class="menu__item">Отзывы</li>
-                </ul>
+        <nav class="header__navigation adaptive--768">
+            <div class="flex-container-768 adaptive--768">
+                <div class="burger-menu-container">
+                    <label class="burger-menu-label">
+                        <input type="checkbox" class="header__burger-menu-checkbox header__navigation-item visually-hidden">
+                        <span class="check-box header__navigation-item--rose-circle"></span>
+                    </label>
                 </div>
-                <div class="main-page__flex-text-image-container">
-                <div class="main-page__text-container">
-                        <p class="main-page__paragraph hide-item-phone-768 hide-1120">
+                <div class="devider"></div>
+                <div class="logo-container">
+                    <a href="index.html" class="header__logo-link header__navigation-item"><img src="images/Group.svg" class="header__logo-img" alt="Логотип CPS"></a>
+                </div>
+            </div>
+            <div class="flex-container-768 adaptive--768 flex-container-768--rose-buttons">
+                <div class="button-call-container button-navigation-item-container">
+                    <button class="header__button-call header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+                </div>
+                <div class="button-chat-container button-navigation-item-container">
+                    <button class="header__button-chat header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+                </div>
+                <div class="button-profile-container">
+                    <button class="header__button-profile header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+                </div>
+                <div class="devider"></div>
+                <div class="button-repair-container button-navigation-item-container">
+                    <button class="header__button-repair header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+                </div>
+                <div class="button-checkstatus-container button-navigation-item-container">
+                    <button class="header__button-checkstatus header__navigation-item header__navigation-button header__navigation-item--rose-circle"></button>
+                </div>
+            </div>
+        </nav>
+        <nav class="header__navigation adaptive--1120">
+            <h1 class="main-page__heading--1120">Услуги и сервисы</h1>
+            <div class="flex-container-1120">
+                <div class="button-repair-container button-navigation-item-container">
+                    <label for="" class="label-button-repair">
+                        <span class="button-repair-text button-text">Оставить заявку</span>
+                        <input type="button" class="header__button-repair header__navigation-item header__navigation-button header__navigation-item--rose-circle">
+                    </label>
+                </div>
+                <div class="button-checkstatus-container button-navigation-item-container">
+                    <label for="" class="label-button-checkstatus">
+                        <span class="button-checkstatus-text button-text">Статус ремонта</span>
+                        <input type="button" class="header__button-checkstatus header__navigation-item header__navigation-button header__navigation-item--rose-circle">
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-page">
+        <h1 class="main-page__heading">Услуги и сервисы</h1>
+        <nav class="menu-navigation phone--adaptive">
+            <ul class="menu">
+                <li class="menu__item menu__item-selected">Ремонтируемые устройства</li>
+                <li class="menu__item">Дополнительные услуги</li>
+                <li class="menu__item">Цены на услуги</li>
+                <li class="menu__item">Адреса сервисных центров</li>
+                <li class="menu__item">Специальные цены</li>
+                <li class="menu__item">Отзывы</li>
+            </ul>
+        </nav>
+        <nav class="menu-navigation adaptive--768">
+            <ul class="menu">
+                <li class="menu__item menu__item-selected">Ремонтируемые устройства</li>
+                <li class="menu__item">Дополнительные услуги</li>
+                <li class="menu__item">Цены на услуги</li>
+                <li class="menu__item">Адреса сервисных центров</li>
+                <li class="menu__item">Специальные цены</li>
+                <li class="menu__item">Отзывы</li>
+            </ul>
+        </nav>
+        <nav class="menu-navigation adaptive--1120">
+            <ul class="menu">
+                <li class="menu__item menu__item-selected">Ремонтируемые устройства</li>
+                <li class="menu__item">Дополнительные услуги</li>
+                <li class="menu__item">Цены на услуги</li>
+                <li class="menu__item">Адреса сервисных центров</li>
+                <li class="menu__item">Специальные цены</li>
+                <li class="menu__item">Отзывы</li>
+            </ul>
+        </nav>
+        <div class="main-page__flex-text-image-container">
+            <div class="main-page__text-container">
+                <p class="main-page__paragraph phone--adaptive">
+                    Мы являемся авторизованным<br>
+                    сервисным центром по ремонту техники<br>
+                    Dell. Только у нас вы можете<br>
+                    отремонтировать свой ноутбук Dell с<br>
+                    официальной гарантией производителя.</p>
+                    <p class="main-page__paragraph adaptive--768">
                         Мы являемся авторизованным сервисным<br>
                         центром по ремонту техники Dell. Только у нас<br>
                         вы можете отремонтировать свой ноутбук<br>
                         Dell с официальной гарантией<br>
-                        производителя.</p>
-                        <p class="main-page__paragraph hide-768 hide-1120">
-                            Мы являемся авторизованным<br>
-                            сервисным центром по ремонту техники<br>
-                            Dell. Только у нас вы можете<br>
-                            отремонтировать свой ноутбук Dell с<br>
-                            официальной гарантией производителя.</p>
-                        <p class="main-page__paragraph hide-item-phone-768 hide-1120">Мы успешно работаем с 1992 года и<br>
-                            заслужили репутацию надежного партнера</p>
-                        <p class="main-page__paragraph hide-item-phone-1120">
-                            Мы являемся авторизованным сервисным центром по ремонту техники<br>
-                            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с<br>
-                            официальной гарантией производителя.
-                        </p>
-                        <p class="main-page__paragraph hide-item-phone-1120">
-                            Мы успешно работаем с 1992 года и заслужили репутацию надежного<br>
-                            партнера, что подтверждает большое количество постоянных клиентов.<br>
-                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою<br>
-                            очередь, советуют нас родным и близким.
-                        </p>
-                        <a class="link-more"><span class="link-more__text">Читать далее</span></a>
-                </div>
-                        <div class="main-page__image-container">
-                            <img src="images/CPS-picture.jpg" alt="Логотип CPS" class="main-page__image-logo">
-                        </div>
-                    </div>
-        </main>
-        <footer>
-
-        </footer>
-    </body>
+                        производителя.
+                    </p>
+                    <p class="main-page__paragraph adaptive--768">
+                        Мы успешно работаем с 1992 года и<br>
+                        заслужили репутацию надежного партнера
+                    </p>
+                    <p class="main-page__paragraph adaptive--1120">
+                        Мы являемся авторизованным сервисным центром по ремонту техники<br>
+                        Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с<br>
+                        официальной гарантией производителя.
+                    </p>
+                    <p class="main-page__paragraph adaptive--1120">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного<br>
+                        партнера, что подтверждает большое количество постоянных клиентов.<br>
+                        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою<br>
+                        очередь, советуют нас родным и близким.
+                    </p>
+                <button class="button-more">Читать далее</button>
+            </div>
+            <div class="main-page__image-container">
+                <img src="images/CPS-picture.jpg" alt="Логотип CPS" class="main-page__image-logo">
+            </div>
+        </div>
+    </main>
+</body>
 </html>
